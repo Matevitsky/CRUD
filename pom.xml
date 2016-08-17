@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>ua.kobzev</groupId>
+    <groupId>ru.matevitsky</groupId>
     <artifactId>MyTestSpringMVCExample</artifactId>
     <name>MyTestSpringMVCExample</name>
     <packaging>war</packaging>
@@ -17,19 +17,9 @@
         <jdk.version>1.7</jdk.version>
         <context.path>SpringHibernateAnnotations</context.path>
     </properties>
-    <developers>
 
 
-        <developer>
-            <id>Kostya Kobzev</id>
-            <email>kostya.kobzev@gmail.com</email>
-            <organization>kobzev.ua</organization>
-            <roles>
-                <role>Java Junior Developer</role>
-            </roles>
-            <timezone>+2:00</timezone>
-        </developer>
-    </developers>
+
 
     <build>
         <finalName>${pom.artifactId}</finalName>
