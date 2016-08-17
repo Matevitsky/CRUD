@@ -20,7 +20,6 @@
     <developers>
 
 
-
         <developer>
             <id>Kostya Kobzev</id>
             <email>kostya.kobzev@gmail.com</email>
@@ -36,6 +35,31 @@
         <finalName>${pom.artifactId}</finalName>
 
         <plugins>
+
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <contextFile>src/main/resources/tomcat/context.xml</contextFile>
+                    <systemProperties>
+                        <file.encoding>UTF-8</file.encoding>
+                        <spring.profiles.active>tomcat,datajpa</spring.profiles.active>
+                    </systemProperties>
+                    <protocol>org.apache.coyote.http11.Http11NioProtocol</protocol>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                        <version>LATEST</version>
+                        <!-- <groupId>org.postgresql</groupId>
+                         <artifactId>postgresql</artifactId>
+                         <version>${postgresql.version}</version>-->
+                    </dependency>
+                </dependencies>
+            </plugin>
+
             <!-- Maven compiler plugin -->
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -83,8 +107,6 @@
             <artifactId>commons-dbcp</artifactId>
             <version>1.2.2</version>
         </dependency>
-
-
 
 
         <dependency>
