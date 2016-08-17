@@ -19,6 +19,8 @@
     </properties>
     <developers>
 
+
+
         <developer>
             <id>Kostya Kobzev</id>
             <email>kostya.kobzev@gmail.com</email>
@@ -73,6 +75,17 @@
             <artifactId>hibernate-entitymanager</artifactId>
             <version>${hibernate.version}</version>
         </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/commons-dbcp/commons-dbcp -->
+        <dependency>
+            <groupId>commons-dbcp</groupId>
+            <artifactId>commons-dbcp</artifactId>
+            <version>1.2.2</version>
+        </dependency>
+
+
+
 
         <dependency>
             <groupId>org.hibernate</groupId>

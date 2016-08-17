@@ -59,24 +59,17 @@
     </table>
 
     <%---------------------------------------------%>
-<%--
+    <%--
 
-    <form method= get action="/searchUser">
-        <input type="text" name="Search">
+        <form method= get action="/searchUser">
+            <input type="text" name="Search">
 
 
-    </form>
---%>
+        </form>
+    --%>
 
     <%--<form action="/searchUser" method="GET">
         Search Name: <input type="text" name="Search">--%>
-
-
-
-
-
-
-
 
 
 </center>

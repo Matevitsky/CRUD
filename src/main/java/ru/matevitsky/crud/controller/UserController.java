@@ -65,20 +65,7 @@ public class UserController {
         }
     }
 
-   /* @RequestMapping("/searchUser")
 
-    public ModelAndView searchUser(@RequestParam String name)
-    {
-
-        ModelAndView mav = new ModelAndView("searchUser");
-
-        List users = userService.searchUser(name.trim());
-        mav.addObject("searchUser", users);
-
-        return mav;
-
-    }
-*/
 
     @RequestMapping("form")
     public ModelAndView getForm(@ModelAttribute User user) {
