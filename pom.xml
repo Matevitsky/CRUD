@@ -50,12 +50,13 @@
                 </configuration>
                 <dependencies>
                     <dependency>
-                        <groupId>mysql</groupId>
+                       <!-- <groupId>mysql</groupId>
                         <artifactId>mysql-connector-java</artifactId>
-                        <version>LATEST</version>
-                        <!-- <groupId>org.postgresql</groupId>
+                        <version>LATEST</version>-->
+
+                         <groupId>org.postgresql</groupId>
                          <artifactId>postgresql</artifactId>
-                         <version>${postgresql.version}</version>-->
+                         <version>RELEASE</version>
                     </dependency>
                 </dependencies>
             </plugin>
