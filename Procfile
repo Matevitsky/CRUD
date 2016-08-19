@@ -1,1 +1,1 @@
-web:    java $JAVA_OPTS  -DCRUD_ROOT="." -jar target/dependency/crud.jar --port $PORT target/*.war
+web:    java $JAVA_OPTS  -DTOPJAVA_ROOT="." -jar target/dependency/webapp-runner.jar --port $PORT target/*.war
