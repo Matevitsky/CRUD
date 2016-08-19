@@ -1,1 +1,3 @@
-web:    java $JAVA_OPTS  -DCRUD_ROOT="." -jar target/dependency/webapp-runner.jar --port $PORT target/*.war
+
+
+web: sh target/bin/webapp
