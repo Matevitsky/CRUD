@@ -102,6 +102,12 @@ public class UserController {
             userList = userService.getList(filterAtributes.getPageNumber());
         return new ModelAndView("list", "userList", userList);
     }
+
+    @RequestMapping("/")
+    public ModelAndView firstPage(@ModelAttribute FilterAtributes filterAtributes){
+        return new ModelAndView("redirect:list");
+
+    }
     @RequestMapping("delete")
     public ModelAndView deleteUser(@RequestParam int id) {
         userService.removeUser(id);
