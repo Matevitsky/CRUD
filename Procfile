@@ -1,3 +1,1 @@
-
-
-web: java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/*.war
+web: java -Dserver.port=$PORT -jar target/MyTestSpringMVCExample-1.0.0-BUILD-SNAPSHOT.jar

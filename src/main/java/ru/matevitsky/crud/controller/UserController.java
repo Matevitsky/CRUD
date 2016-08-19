@@ -103,11 +103,11 @@ public class UserController {
         return new ModelAndView("list", "userList", userList);
     }
 
-    @RequestMapping("/")
+   /* @RequestMapping("/")
     public ModelAndView firstPage(@ModelAttribute FilterAtributes filterAtributes){
         return new ModelAndView("redirect:list");
 
-    }
+    }*/
     @RequestMapping("delete")
     public ModelAndView deleteUser(@RequestParam int id) {
         userService.removeUser(id);
