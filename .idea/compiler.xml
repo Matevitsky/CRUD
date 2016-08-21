@@ -31,7 +31,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="CRUD" target="1.7" />
+      <module name="CRUD" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

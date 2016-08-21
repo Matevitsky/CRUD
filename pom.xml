@@ -74,13 +74,17 @@
             </plugin>
 
             <!-- Maven compiler plugin -->
-            <plugin>
+           <!-- <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <source>${jdk.version}</source>
                     <target>${jdk.version}</target>
                 </configuration>
-            </plugin>
+
+            </plugin>-->
+
+
+
         </plugins>
     </build>
     <dependencies>
@@ -88,6 +92,14 @@
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>${log4j.version}</version>
+        </dependency>
+
+
+        <!-- Maven compiler plugin -->
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.5.1</version>
         </dependency>
 
         <dependency>
