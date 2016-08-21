@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!--<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -6,8 +6,22 @@
     <artifactId>MyTestSpringMVCExample</artifactId>
     <name>MyTestSpringMVCExample</name>
     <packaging>war</packaging>
-    <version>1.0.0-BUILD-SNAPSHOT</version>
+    <version>1.0.0-BUILD-SNAPSHOT</version>-->
 
+
+
+    <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+        <modelVersion>4.0.0</modelVersion>
+
+        <groupId>ru.matevitsky</groupId>
+        <artifactId>CRUDAPP</artifactId>
+        <packaging>war</packaging>
+
+        <version>1.0-SNAPSHOT</version>
+
+        <name>CRUD APP</name>
+        <url>http://matevitskeycrud.herokuapp.com/</url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.version>4.0.5.RELEASE</spring.version>
@@ -18,9 +32,10 @@
         <context.path>SpringHibernateAnnotations</context.path>
     </properties>
 
+        <tomcat.version>8.0.33</tomcat.version>
 
     <build>
-        <finalName>${pom.artifactId}</finalName>
+        <finalName>CRUD</finalName>
 
         <plugins>
             <plugin>
@@ -74,17 +89,14 @@
             </plugin>
 
             <!-- Maven compiler plugin -->
-           <!-- <plugin>
+            <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <source>${jdk.version}</source>
                     <target>${jdk.version}</target>
                 </configuration>
 
-            </plugin>-->
-
-
-
+            </plugin>
         </plugins>
     </build>
     <dependencies>
@@ -92,14 +104,6 @@
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>${log4j.version}</version>
-        </dependency>
-
-
-        <!-- Maven compiler plugin -->
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.5.1</version>
         </dependency>
 
         <dependency>
